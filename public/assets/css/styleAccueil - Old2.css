@@ -1,0 +1,272 @@
+
+.container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100vh;
+	background:url('/assets/img/LavaPaper.png');
+/*	background-color: rgba(228, 239, 243, 0.96); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: color-burn;
+
+}
+
+.container1{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+#lava1{
+	background: url('/public/assets/img/wallpaper.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#Texte1{
+	margin-top:10%;
+	margin-left: 20%;
+	font-size: 8vh;
+	width: 50%;
+	font-weight:600;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-decoration-line: underline;
+	text-shadow: #a8a8a8 4px 2px ;
+	animation: text1 2s;
+	transition:  2s ease-in-out;
+}
+@keyframes text1 {
+	0%{transform:translate3d(-200px,0px,0px)}100%{transform:translate3d(000px,0px,0px)} /* Défilement Horizontal */
+	0%    { opacity: 0; }
+	20%   { opacity: 0; }
+	30%   { opacity: 0.7; }
+	50%   { opacity: 0.8; }
+	80%   { opacity: 0.9; }
+	100%  { opacity: 1; }
+}
+
+#Texte2{
+	margin-top:5%;
+	margin-left:5% ;
+	font-size: 4vh;
+	width: 50%;
+	font-weight: 500;
+	font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-shadow: #a8a8a8 4px 2px ;
+	animation: text2 3s;
+	transition:  3s ease-in-out;
+	animation-delay: 0s;
+}
+@keyframes text2 {
+	0%{transform:translate3d(-300px,0px,0px)}100%{transform:translate3d(000px,0px,0px)} /* Défilement Horizontal */
+	0%    { opacity: 0.0; }
+	20%   { opacity: 0; }
+	30%   { opacity: 0.1; }
+	50%   { opacity: 0.5; }
+	80%   { opacity: 0.7; }
+	100%  { opacity: 1; }
+}
+
+/*** IMAGES GUITARES MAIN PAGE ****************/
+
+#LavaMe3{
+	/** rouge **/
+	/*width: 60rem; */
+	width: 22%;
+	top: -38%;
+	right: 11%;
+	padding: 0px;
+	position: absolute;
+	z-index: 2;
+	animation: lav1 3s;
+	transition:  2s ease-in-out;
+}
+@keyframes lav1 {
+/*	0%{transform:translate3d(10px,600px,200px)}100%{transform:translate3d(0px,0px,0px)} /* Défilement Vertical */
+	0%    { opacity: 0; }
+	20%   { opacity: 0; }
+	30%   { opacity: 0; }
+	50%   { opacity: 0.2; }
+	60%   { opacity : 0.6; }
+	80%   { opacity: 0.9; }
+	100%  { opacity: 1; }
+}
+/*** bleu **/
+#LavaMe3-2{
+	width: 22%;
+	top: -30%;
+	right: 30px;
+	padding: 0px;
+	position: absolute;
+	z-index: 3;
+	animation: lav2 4s;
+	transition:  3s ease-in-out;
+	}
+	@keyframes lav2 {
+	/*	0%{transform:translate3d(10px,600px,200px)}100%{transform:translate3d(0px,0px,0px)} /* Défilement Vertical */
+	0%    { opacity: 0; }
+	20%   { opacity: 0; }
+	30%   { opacity: 0; }
+	50%   { opacity: 0.2; }
+	60%   { opacity : 0.6; }
+	80%   { opacity: 0.9; }
+	100%  { opacity: 1; }
+	}
+/** Noir **/
+#LavaMe3-3{
+	width: 22%;
+	top:-45%;
+	right: 20%;
+	position: absolute;
+	z-index: 1;
+	animation: lav 2s;
+	transition:  1s ease-in-out;
+}
+@keyframes lav {
+	0%{transform:translate3d(10px,600px,200px)}100%{transform:translate3d(0px,0px,0px)} /* Défilement Vertical */
+	0%    { opacity: 0; }
+	20%   { opacity: 0; }
+	30%   { opacity: 0.7; }
+	50%   { opacity: 0.8; }
+	80%   { opacity: 0.9; }
+	100%  { opacity: 1; }
+}
+
+/********** FIN IMAGES MAIN PAGE ****/
+
+/****  Image Manche ****/
+#Manche{
+	width: 50%;
+	height: 70%;
+	position: absolute;
+	z-index: 0;
+	bottom:0;
+	left: 130px;
+}
+
+#cont1{
+	width: 100%;
+	height: 100%;
+	margin-bottom:-10PX ;
+}
+
+#background2{
+	margin-top: -60px;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.textBulle{
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	width: 25%;
+	height: 20%;
+	font-size: 3vh;
+	border-radius: 10%;
+	background-color:rgba(93,93,93,255);
+	margin-left: 25%;
+	margin-top: -120px;
+	font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-shadow: #a8a8a8 4px 2px ;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.91);
+}
+.textBulle p{
+	color: #fdfdfd;
+	text-shadow: #313131 2px 2px 2px 2px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.cont2{
+	width: 100%;
+	height: 100%;
+	background:url("/public/assets/img/LavaBanner.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+#background3{
+	width: 100%;
+	height: 100%;
+	background: url("/public/assets/img/lava.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/************************** FIN index.html.twig OLD2 **********************/
+
+/***********************************/
+/***********************************/
+
+/*** New index.html.twig ***/
+
+/* --- General Pen Styles --- */
+body{
+	font-family: Georgia, serif;
+	color: #333;
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+a{color: #000;}
+h1{
+	font-size: 2.6rem;
+	line-height: 2.6rem;
+}
+.content{
+	margin: 0 auto;
+	max-width: 90%;
+	width: 720px;
+}
+main{
+	padding: 1% 0;
+	position: relative;
+	background: #f5f5f5;
+	box-shadow: 0px -10px 60px rgba(0,0,0,0.25);
+	height: 100%;
+}
+footer p{
+	font-size: .8rem;
+	font-weight: bold;
+	color: #ccc;
+}
+footer a{color: #ccc;}
+/* --- Important Pen Styles --- */
+
+.zoom{
+	overflow: hidden;
+	padding-bottom: 55%;
+}
+.zoom img{
+	position: fixed;
+	top: 0%;
+	left: 50%;
+	max-width: 200%;
+	width: 100%;
+	transform: translateX(-50%);
+	/* Thanks  @bastian_fiessinger. Use when activating blur effect:
+	will-change: -webkit-filter, filter, transform; */
+}
+@media (max-width: 667px) {
+	h1{
+		font-size: 1.8rem;
+		line-height: 2.6rem;
+		text-align: left;
+	}
+	.content{
+		margin: 0 auto;
+		max-width: 90%;
+		width: 100%;
+		height: 100%;
+		text-align: justify;
+	}
+	.zoom{
+		overflow: hidden;
+		padding-bottom: 75%;
+	}
+
+}

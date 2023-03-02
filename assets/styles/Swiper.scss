@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+/*
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+.heading {
+  background: white;
+  height: 5%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  left: 4%;
+  right: 4%;
+
+}
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Image Accordions General
+.container-general {
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 800px;
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+    .item {
+      flex: 1;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: none;
+      transition: all 0.8s ease;
+      &:hover {
+        flex: 7;
+      }
+    }
+  }
+}
+
+// Image Accordions Effect 1
+.wrap-effect-1 {
+  .item {
+    &:first-of-type {
+      background-image: url('/assets/img/swiper/swipe8.jpg');
+    }
+    &:nth-of-type(2) {
+      background-image: url('/assets/img/swiper/swipe2.jpg');
+    }
+    &:nth-of-type(3) {
+      background-image: url('/assets/img/swiper/swipe6.jpg');
+    }
+    &:nth-of-type(4) {
+      background-image: url('/assets/img/swiper/swipe7.jpg');
+    }
+    &:last-of-type {
+      background-image: url('/assets/img/swiper/swipe4.jpg');
+    }
+  }
+}
+
+// Image Accordions Effect 2
+.wrap-effect-2 {
+  .item {
+    &:hover {
+      transform: translate3d(0, 0, 100px);
+      box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+      filter: saturate(2) contrast(120%);
+    }
+    &:first-of-type {
+      background-image: url('/assets/img/swiper/swipe18.jpg');
+    }
+    &:nth-of-type(2) {
+      background-image: url('/assets/img/swiper/swipe11.jpg');
+    }
+    &:nth-of-type(3) {
+      background-image: url('/assets/img/swiper/swipe20.jpg');
+    }
+    &:nth-of-type(4) {
+      background-image: url('/assets/img/swiper/swipe13.jpg');
+    }
+    &:last-of-type {
+      background-image: url('/assets/img/swiper/swipe17.jpg');
+    }
+  }
+}
+
+// Image Accordions Effect 3
+.wrap-effect-3 {
+  .item {
+    &:hover {
+	rotate:360deg;
+      animation: 0.7s ease-in-out both;
+      border-radius: 10px;
+      border: 1px solid gray;
+    }
+    &:first-of-type {
+      background-image: url('/assets/img/swiper/swipe16.jpg');
+    }
+    &:nth-of-type(2) {
+      background-image: url('/assets/img/swiper/swipe5.jpg');
+    }
+    &:nth-of-type(3) {
+      background-image: url('https://static.wixstatic.com/media/b8c5a0_04d5e6b392094f999bac50db829c1c40~mv2.gif');
+    }
+    &:nth-of-type(4) {
+      background-image: url('/assets/img/swiper/swipe10bis.jpg');
+    }
+    &:last-of-type {
+      background-image: url('/assets/img/swiper/swipe3.jpg');
+    }
+  }
+}
+
+// Image Accordions Effect 4
+.wrap-effect-4 {
+  .item {
+    &:hover {
+      box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+      filter: saturate(2) contrast(120%);
+    }
+    &:first-of-type {
+      background-image: url('/assets/img/swiper/swipe22.jpg');
+    }
+    &:nth-of-type(2) {
+      background-image: url('/assets/img/swiper/swipe21.jpg');
+    }
+    &:nth-of-type(3) {
+      background-image: url('https://static.wixstatic.com/media/b8c5a0_5937f3d8e7cf47e09214f5ebde0a35c5~mv2.gif');
+    }
+    &:nth-of-type(4) {
+      background-image: url('/assets/img/swiper/swipe24.jpg');
+    }
+    &:last-of-type {
+      background-image: url('/assets/img/swiper/swipe23.jpg');
+    }
+  }
+}
+
+.inspire {
+  border: 1px solid rgba(22, 76, 167, 0.6);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  text-decoration:none;
+  margin: 10px;
+  padding: 10px;
+  &:after {
+    background: #38ef7d;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+  &:hover {
+    &:after {
+      left: 120%;
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(10deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(5deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0)
+  }
+}
